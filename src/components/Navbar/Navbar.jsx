@@ -27,10 +27,10 @@ const Navbar = () => {
             </div>
             <div className="lg:gap-5 gap-1 lg:ml-28 ml-6">
                 <div className="navbar-end">
-                    <a className="btn bg-[#23BE0A] text-white">SignIn</a>
+                    <a className="btn bg-[#23BE0A] text-white lg:w-[68px] w-[60px]">SignIn</a>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn bg-[#59C6D2] text-white">SignUp</a>
+                    <a className="btn bg-[#59C6D2] text-white lg:w-[68px] w-[60px]">SignUp</a>
                 </div>
             </div>
         </div>
