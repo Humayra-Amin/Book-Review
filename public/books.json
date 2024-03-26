@@ -1,0 +1,146 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "image": "https://i.ibb.co/DR5qXkg/great-gatsby.jpg",
+    "review": "A mesmerizing tale of love, ambition, and tragedy set in the Roaring Twenties.",
+    "totalPages": 218,
+    "rating": 4.5,
+    "category": "Fiction",
+    "tags": [
+      "Classics",
+      "Romance"
+    ],
+    "publisher": "Scribner",
+    "yearOfPublishing": 1925
+  },
+  {
+    "bookId": 2,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "https://i.ibb.co/XpdR20P/to-kill-a-mockingbird.png",
+    "review": "An American classic that explores themes of racism, justice, and innocence.",
+    "totalPages": 324,
+    "rating": 4.8,
+    "category": "Fiction",
+    "tags": [
+      "Social Justice",
+      "Coming-of-Age"
+    ],
+    "publisher": "J. B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 3,
+    "bookName": "The Alchemist",
+    "author": "Paulo Coelho",
+    "image": "https://i.ibb.co/xsb1jJ0/alchemist.jpg",
+    "review": "A captivating tale of self-discovery and following one's dreams, 'The Alchemist' is a timeless story that inspires readers to listen to their hearts and pursue their destinies.",
+    "totalPages": 208,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": [
+      "Adventure",
+      "Philosophical"
+    ],
+    "publisher": "HarperCollins",
+    "yearOfPublishing": 1988
+  },
+  {
+    "bookId": 4,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "https://i.ibb.co/Pry4F8x/catcher-in-the-rye.jpg",
+    "review": "A poignant exploration of teenage angst and disillusionment.",
+    "totalPages": 224,
+    "rating": 4.3,
+    "category": "Fiction",
+    "tags": [
+      "Coming-of-Age",
+      "Existentialism"
+    ],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  },
+  {
+    "bookId": 5,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "https://i.ibb.co/q5KLmLN/pride-and-prejudice.jpg",
+    "review": "A timeless romance that satirizes societal norms and values.",
+    "totalPages": 432,
+    "rating": 4.6,
+    "category": "Fiction",
+    "tags": [
+      "Romance",
+      "Satire"
+    ],
+    "publisher": "T. Egerton, Whitehall",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 6,
+    "bookName": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "image": "https://i.ibb.co/zP43KYJ/harry-potter-and-the-philosophers-stone.jpg",
+    "review": "A magical journey into a world of wizards, witches, and friendship.",
+    "totalPages": 320,
+    "rating": 4.9,
+    "category": "Fantasy",
+    "tags": [
+      "Magic",
+      "Adventure"
+    ],
+    "publisher": "Bloomsbury",
+    "yearOfPublishing": 1997
+  },
+  {
+    "bookId": 7,
+    "bookName": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "image": "https://i.ibb.co/Jy4Bzsb/lord-of-the-rings.jpg",
+    "review": "An epic fantasy adventure set in the fictional world of Middle-earth.",
+    "totalPages": 1178,
+    "rating": 4.8,
+    "category": "Fantasy",
+    "tags": [
+      "Epic",
+      "Adventure"
+    ],
+    "publisher": "Allen & Unwin",
+    "yearOfPublishing": 1954
+  },
+  {
+    "bookId": 8,
+    "bookName": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "image": "https://i.ibb.co/nQV0Tpd/hunger-games.jpg",
+    "review": "A gripping dystopian novel set in a future where teenagers fight to the death in a televised event.",
+    "totalPages": 374,
+    "rating": 4.3,
+    "category": "Science Fiction",
+    "tags": [
+      "Dystopian",
+      "Adventure"
+    ],
+    "publisher": "Scholastic Corporation",
+    "yearOfPublishing": 2008
+  },
+  {
+    "bookId": 9,
+    "bookName": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "image": "https://i.ibb.co/WFmbb8z/hitchhikers-guide.jpg",
+    "review": "A humorous science fiction series following the misadventures of Arthur Dent, an unwitting Earthling.",
+    "totalPages": 208,
+    "rating": 4.2,
+    "category": "Science Fiction",
+    "tags": [
+      "Humor",
+      "Adventure"
+    ],
+    "publisher": "Pan Books",
+    "yearOfPublishing": 1979
+  }
+]
