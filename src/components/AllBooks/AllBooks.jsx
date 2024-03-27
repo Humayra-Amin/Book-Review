@@ -13,7 +13,7 @@ const AllBooks = () => {
     return (
         <div className="container mx-auto w-10/12 lg:w-4/5">
             <div className="text-center my-16">
-                <h2 className="text-4xl lg:text-4xl font-manrope font-extrabold mt-8 lg:mt-6 playfair">Books</h2>
+                <h2 className="text-4xl lg:text-4xl playfair font-semibold mt-8 lg:mt-6">Books</h2>
             </div>
             <div className="card grid grid-cols-1 lg:grid-cols-3 gap-5">
                {

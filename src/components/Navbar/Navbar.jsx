@@ -3,9 +3,12 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
 
     const links = <>
-        <li><NavLink to="/">Home</NavLink></li>
-        <li><NavLink to="/listedbooks">Listed Books</NavLink></li>
-        <li><NavLink to="/pagestoread">Pages to Read</NavLink></li>
+        <li><NavLink to="/" className={({ isActive }) => 
+        isActive ? 'text-green-500 bg-white border-2 border-green-500' : 'text-black bg-white'}>Home</NavLink></li>
+        <li><NavLink to="/listedbooks" className={({ isActive }) => 
+        isActive ? 'text-green-500 bg-white border-2 border-green-500' : 'text-black bg-white'}>Listed Books</NavLink></li>
+        <li><NavLink to="/pagestoread" className={({ isActive }) => 
+        isActive ? 'text-green-500 bg-white border-2 border-green-500' : 'text-black bg-white'}>Pages to Read</NavLink></li>
     </>
     return (
         <div className="navbar container mx-auto my-5 w-10/12 lg:w-4/5">
