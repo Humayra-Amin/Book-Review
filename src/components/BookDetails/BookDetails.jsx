@@ -1,4 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -6,6 +9,8 @@ const BookDetails = () => {
     const bookIdInt = parseInt(bookId);
     const book = books.find(book => book.bookId === bookIdInt);
     console.log(book);
+
+    
     return (
         <div className="container mx-auto w-10/12 lg:w-4/5">
             <div className="card lg:card-side mt-14">
@@ -35,6 +40,7 @@ const BookDetails = () => {
 
                 </div>
             </div>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

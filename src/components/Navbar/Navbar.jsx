@@ -9,6 +9,10 @@ const Navbar = () => {
         isActive ? 'text-green-500 bg-white border-2 border-green-500' : 'text-black bg-white'}>Listed Books</NavLink></li>
         <li><NavLink to="/pagestoread" className={({ isActive }) => 
         isActive ? 'text-green-500 bg-white border-2 border-green-500' : 'text-black bg-white'}>Pages to Read</NavLink></li>
+        <li><NavLink to="/about" className={({ isActive }) => 
+        isActive ? 'text-green-500 bg-white border-2 border-green-500' : 'text-black bg-white'}>About</NavLink></li>
+        <li><NavLink to="/contactus" className={({ isActive }) => 
+        isActive ? 'text-green-500 bg-white border-2 border-green-500' : 'text-black bg-white'}>Contact Us</NavLink></li>
     </>
     return (
         <div className="navbar container mx-auto my-5 w-10/12 lg:w-4/5">
@@ -24,7 +28,7 @@ const Navbar = () => {
                 <a className="btn btn-ghost lg:text-4xl text-[15px]">Book Vibe</a>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 lg:gap-4 lg:mr-36">
+                <ul className="menu menu-horizontal px-1 lg:gap-4 lg:mr-6">
                     {links}
                 </ul>
             </div>
