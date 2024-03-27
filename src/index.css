@@ -13,3 +13,11 @@
   font-family: "Playfair Display", sans-serif;
 }
 
+@media only screen and (max-width: 567px) {
+  .chart-container {
+      width: 150px;
+      overflow-x: auto;
+      margin-right: 10;
+  }
+}
+

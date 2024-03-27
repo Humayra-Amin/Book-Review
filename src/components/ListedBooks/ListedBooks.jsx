@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react";
+import location from '../../assets/images/location.svg'
+import publisher from '../../assets/images/publisher.svg'
+import page from '../../assets/images/page.svg'
 import { Link, useLoaderData } from "react-router-dom";
 import { getStoredReadBooks } from "../../utility/localstorage";
 
@@ -78,17 +81,17 @@ const ListedBooks = () => {
                                         </div>
 
                                         <div className="flex lg:gap-2 gap-4">
-                                            <img src="../src/assets/images/location.svg" alt="" className="w-[24px] h-[24px]" />
+                                            <img src={location} alt="" className="w-[24px] h-[24px]" />
                                             <p className="lg:text-xl text-[14px] worksans font-semibold">Year of Publishing: <span className="font-normal">{book.yearOfPublishing}</span></p>
                                         </div>
 
                                     </div>
 
                                     <div className="mt-4 flex lg:flex-row lg:gap-2 gap-1">
-                                        <img src="../src/assets/images/publisher.svg" alt="" />
-                                        <p className="lg:text-xl text-[12px] worksans font-semibold">Publisher: <span className="font-normal">{book.publisher}</span></p>
-                                        <img src="../src/assets/images/page.svg" alt="" />
-                                        <p className="lg:text-xl text-[12px] worksans font-semibold">Pages: <span className="font-normal">{book.totalPages}</span></p>
+                                        <img src={publisher} alt="" />
+                                        <p className="lg:text-xl text-[14px] worksans font-semibold">Publisher: <span className="font-normal">{book.publisher}</span></p>
+                                        <img src={page} alt="" />
+                                        <p className="lg:text-xl text-[14px] worksans font-semibold">Pages: <span className="font-normal">{book.totalPages}</span></p>
                                     </div>
 
                                     <hr className="my-4 lg:w-[800px]" />
