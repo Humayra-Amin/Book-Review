@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
 import location from '../../assets/images/location.svg'
 import publisher from '../../assets/images/publisher.svg'
 import page from '../../assets/images/page.svg'
+import { useEffect, useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { getStoredReadBooks } from "../../utility/localstorage";
 
@@ -10,7 +10,8 @@ const ListedBooks = () => {
     const books = useLoaderData();
 
     const [readBooks, setReadBooks] = useState([]);
-    // const [sortBy, setSortBy] = useState([]);
+
+    const [sortBy, setSortBy] = useState('');
 
     useEffect(() => {
         const storedBookIds = getStoredReadBooks();
@@ -30,7 +31,25 @@ const ListedBooks = () => {
             setReadBooks(booksRead);
             // setSortBy(booksRead);
         }
-    }, [books])
+    }, [books]);
+
+    const handleSortBy = (descOrder) => {
+        setSortBy(descOrder);
+    }
+
+    const sortBooks = [...books];
+
+    if (sortBy === 'rating') {
+        sortBooks.sort((a, b) => b.rating - a.rating);
+    }
+    else if (sortBy === 'totalPages') {
+        sortBooks.sort((a, b) => a.totalPages - b.totalPages);
+    }
+    else if (sortBy === 'yearOfPublishing') {
+        sortBooks.sort((a, b) => a.yearOfPublishing - b.yearOfPublishing);
+    }
+
+
     return (
         <div className="container mx-auto w-10/12 lg:w-4/5">
             <div className="text-center my-16">
@@ -38,14 +57,14 @@ const ListedBooks = () => {
             </div>
 
             <div className="text-center items-center justify-center ">
-                <div className="dropdown dropdown-bottom">
-                    <div tabIndex={0} role="button" className="btn bg-[#23BE0A] text-white px-2 py-1 m-1">Sort By</div>
-                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Rating</a></li>
-                        <li><a>Number of Pages</a></li>
-                        <li><a>Published Year</a></li>
+                <details className="dropdown">
+                    <summary className="btn bg-[#23BE0A] text-white px-6 py-4 m-1">Sort By</summary>
+                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                        <li><button onClick={() => handleSortBy('rating')}>Rating</button></li>
+                        <li><button onClick={() => handleSortBy('totalPages')}>Number of pages</button></li>
+                        <li><button onClick={() => handleSortBy('yearOfPublishing')}>Published Year</button></li>
                     </ul>
-                </div>
+                </details>
             </div>
 
             <div className="mt-12">
@@ -60,13 +79,13 @@ const ListedBooks = () => {
 
                     <div className="">
 
-                        {books.map(book => (
+                        {sortBooks.map(book => (
                             <div key={book.bookId} className="card bg-base-100 shadow-xl flex flex-col lg:flex-row lg:mb-8 mb-4 lg:gap-2">
 
                                 <figure className="px-10 py-5">
                                     <img src={book.image} alt="" className="rounded-xl object-contain w-[200px]" />
                                 </figure>
-                                
+
                                 <div className="items-center mt-10 ml-4">
                                     <h2 className="card-title playfair lg:text-4xl">{book.bookName}</h2>
                                     <p className="lg:text-[20px] worksans mt-4  font-medium">By: {book.author}</p>
