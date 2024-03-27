@@ -14,7 +14,7 @@ Currently, two official plugins are available:
 **User-Friendly Interface**: Enjoy a seamless browsing experience with our intuitive and easy-to-navigate website design.
 **Responsive Design**: Access MyBookStore from any device, whether it's a desktop, tablet, or smartphone, thanks to our responsive design.
 **Personalized Recommendations**: Receive personalized book recommendations based on your reading preferences and browsing history.
-**Contact Us**: Have questions or feedback? Feel free to reach out to our customer support team via email at support@mybookstore.com or through our online contact form.
+**Contact Us**: Have questions or feedback? Feel free to reach out to our customer support team via email or through our online contact form.
 
 # Live Site URL
 
