@@ -41,7 +41,7 @@ const BookDetails = () => {
                     <p className="lg:text-[20px] worksans mt-4 font-semibold">Rating: <span className="font-normal">{book.rating}</span></p>
                     <div className="mt-4 flex flex-col lg:flex-row justify-normal gap-4">
                         <button onClick={handleReadBooks} className="btn bg-white border-2 border-black text-xl">Read</button>
-                        <button className="btn bg-[#50B1C9] text-white text-xl">Wishlist</button>
+                        <button className="btn bg-[#50B1C9] text-white text-xl hover:bg-white hover:text-black hover:border-blue-400">Wishlist</button>
                     </div>
 
                 </div>

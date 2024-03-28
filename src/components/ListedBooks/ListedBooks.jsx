@@ -58,7 +58,7 @@ const ListedBooks = () => {
 
             <div className="text-center items-center justify-center ">
                 <details className="dropdown">
-                    <summary className="btn bg-[#23BE0A] text-white px-6 py-4 m-1">Sort By</summary>
+                    <summary className="btn bg-[#23BE0A] text-white px-6 py-4 m-1 hover:bg-white hover:text-black border-2 hover:border-green-500">Sort By</summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
                         <li><button onClick={() => handleSortBy('rating')}>Rating</button></li>
                         <li><button onClick={() => handleSortBy('totalPages')}>Number of pages</button></li>
@@ -95,7 +95,7 @@ const ListedBooks = () => {
                                         <div className="flex lg:gap-2 gap-2">
                                             <p className="text-[16px] lg:text-[20px] worksans font-semibold">Tag </p>
                                             {book.tags.map((tag, idx) => (
-                                                <span key={idx} className="rounded-2xl lg:text-xl text-[12px] border-2 bg-[#23be0a0d] text-[#23BE0A] text-center px-2 py-1"> #{tag}</span>
+                                                <span key={idx} className="rounded-2xl lg:text-[17px] text-[12px] border-2 bg-[#23be0a0d] text-[#23BE0A] text-center px-2 py-1"> #{tag}</span>
                                             ))}
                                         </div>
 
@@ -122,7 +122,7 @@ const ListedBooks = () => {
                                             <p className="rounded-2xl text-[14px] lg:text-[16px] border-2 bg-[#FFAC3326] text-[#FFAC33] text-center px-2 py-1 lg:h-[42px] lg:w-auto font-semibold">Rating: {book.rating}</p>
                                         </div>
 
-                                        <Link to={`/book/${book.bookId}`} className="btn rounded-2xl text-[16px] border-2 px-2 py-1 bg-[#23BE0A] text-white h-[40px] w-[110px] lg:ml-0 ml-14 mb-8 lg:mb-0">View Details
+                                        <Link to={`/book/${book.bookId}`} className="btn rounded-2xl text-[16px] border-2 px-2 py-1 bg-[#23BE0A] text-white h-[40px] w-[110px] lg:ml-0 ml-14 mb-8 lg:mb-0 hover:bg-white hover:text-black hover:border-green-500">View Details
                                         </Link>
 
                                     </div>
