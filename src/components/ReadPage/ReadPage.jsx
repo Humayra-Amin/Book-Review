@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 import axios from "axios";
 
@@ -19,7 +19,7 @@ const ReadPage = () => {
 
     const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink', 'brown', 'green', 'skyblue'];
 
-    const bookData = readPages.map ((book,idx) => ({
+    const bookData = readPages.map (book => ({
         name: book.bookName,
         uv:book.totalPages,
     }));
@@ -37,11 +37,15 @@ const ReadPage = () => {
         return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
     };
 
+    const fontSize = window.innerWidth >= 768 ? 12 : 10;
+   
+
+
     return (
-        <div className="container mx-auto lg:w-[900px] lg:h-[550px] border-2 rounded-xl bg-base-200">
+        <div className="container mx-auto lg:w-[800px] lg:h-[550px] border-2 rounded-xl bg-base-200">
             <div className='lg:mt-10 lg:w-[0]'>
                 <BarChart className=''
-                    width={window.innerWidth >= 1470 ? 800 : window.innerWidth - 2}
+                    width={window.innerWidth >= 1480 ? 800 : window.innerWidth - 2}
                     height={480}
                     data={bookData}
                     margin={{
@@ -52,7 +56,7 @@ const ReadPage = () => {
                     }}
                 >
                     <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="name" angle={window.innerWidth >= 768 ? -12 : -45} textAnchor="end" interval={0} />
+                    <XAxis dataKey="name" angle={window.innerWidth >= 500 ? -12 : -45} textAnchor="end" interval={0} fontSize={fontSize} />
                     <YAxis />
                     <Bar dataKey="uv" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                         {bookData.map((entry, idx) => (
