@@ -38,10 +38,10 @@ const ReadPage = () => {
     };
 
     return (
-        <div className="container mx-auto lg:w-[1170px] lg:h-[550px] border-2 rounded-xl bg-base-200">
+        <div className="container mx-auto lg:w-[900px] lg:h-[550px] border-2 rounded-xl bg-base-200">
             <div className='lg:mt-10 lg:w-[0]'>
                 <BarChart className=''
-                    width={window.innerWidth >= 600 ? 900 : window.innerWidth - 2}
+                    width={window.innerWidth >= 1470 ? 800 : window.innerWidth - 2}
                     height={480}
                     data={bookData}
                     margin={{
